@@ -29,7 +29,7 @@ jobs:
         env:
           GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
         run: |
-          git remote add gitcode "https://Barry_Wu_:${GITCODE_TOKEN}@gitcode.com/Barry_Wu_/FixRAG.git"
+          git remote add gitcode "https://Barry_Wu_:${GITCODE_TOKEN}@gitcode.com/Barry_Wu_/RAG-Agent.git"
           git fetch --prune --tags gitcode
 
       - name: Force push master + tags to GitHub
